@@ -61,3 +61,7 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+/week2-032.TheSumOfSetOfNumbers/build/
+/week2-033.TheSumBetweenTwoNumbers/build/
+/week2-034.Factorial/build/
+/week2-035.SumOfThePowers/build/
