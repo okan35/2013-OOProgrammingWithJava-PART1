@@ -14,11 +14,31 @@ public class HangmanUserInteface {
         System.out.println("");
         printMenu();
         System.out.println("");
+        
+        
 
         // PROGRAM YOUR SOLUTION HERE
-
-
-        System.out.println("Thank you for playing!");
+        while (hangman.gameOn()) {
+            System.out.println("Type a command :");
+            String answer = reader.nextLine();
+            
+            if (answer.equals("quit")) {
+                System.out.println("Thank you for playing !");
+                break;
+            } else if (answer.equals("status")) {
+                hangman.printStatus();
+            } else if (answer.length() == 1) {
+                hangman.guess(answer);
+            } else if (answer.isEmpty()) {
+                printMenu();
+            }
+            
+            hangman.printMan();
+            hangman.printWord();
+            
+        }
+           
+        
     }
 
     public static void printMenu() {
