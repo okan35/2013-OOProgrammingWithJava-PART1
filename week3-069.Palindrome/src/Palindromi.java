@@ -4,6 +4,18 @@ public class Palindromi {
 
     public static boolean palindrome(String text) {
         // write code here
+        
+        String reversedText = "";
+        int counter = 0;
+        
+        while (counter<text.length()) {
+         reversedText = reversedText + text.charAt(text.length() - counter - 1);
+         counter++;
+        } if (text.equals(reversedText)) {
+            return true;
+        } 
+        
+       
         return false;
     }
 

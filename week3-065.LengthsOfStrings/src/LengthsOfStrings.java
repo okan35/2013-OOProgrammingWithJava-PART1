@@ -5,6 +5,13 @@ public class LengthsOfStrings {
         ArrayList<Integer> lengthList = new ArrayList<Integer>();
         // write code here
         
+        for (String words : list) {
+        lengthList.add(words.length());
+        
+        }
+        
+        
+        
         return lengthList;
     }
 
