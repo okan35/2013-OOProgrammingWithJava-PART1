@@ -3,10 +3,11 @@ public class Main {
         Clock clock = new Clock(23, 59, 50);
 
         int i = 0;
-        while (i < 20) {
-            System.out.println(clock);
+        while( i < 20) {
+            System.out.println( clock );
             clock.tick();
             i++;
         }
     }
 }
+  

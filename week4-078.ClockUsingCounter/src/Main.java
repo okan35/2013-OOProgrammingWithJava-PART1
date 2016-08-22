@@ -23,22 +23,18 @@ public class Main {
         minutes.setValue(m);
         hours.setValue(h);
 
-        System.out.println(hours + ":" + minutes + ":" + seconds);
-
         int i = 0;
-        while (i < seconds.getValue()) {
-
+        while (i < 121) {
+            System.out.println(hours + ":" + minutes + ":" + seconds);
             seconds.next();
             if (seconds.getValue() == 0) {
                 minutes.next();
                 if (minutes.getValue() == 0) {
                     hours.next();
-
                 }
-
             }
-            i++;
 
+            i++;
         }
 
     }

@@ -52,7 +52,7 @@ public class BoundedCounter {
 
     public void setValue(int setter) {
 
-        if (0 < setter && setter < this.upperLimit) {
+        if (0 < setter && setter <= this.upperLimit) {
             this.value = setter;
         }
     }
